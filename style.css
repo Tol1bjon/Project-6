@@ -8,6 +8,10 @@
   color: white;
 }
 
+.blue {
+  color: #8EC2F2;
+}
+
 header {
   padding-bottom: 100px;
   background-image: url(./%23hero-cover.5.jpg);
@@ -111,7 +115,42 @@ header .content .section .box button {
   border: none;
 }
 
+.section2 {
+  padding: 100px 0px;
+  max-width: 1200px;
+  margin: auto;
+}
+.section2 .text {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section2 .text p {
+  width: 35%;
+  margin: auto;
+}
+.section2 .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.section2 .box div img {
+  border-radius: 10px;
+}
+.section2 .box div div {
+  border-radius: 10px;
+  position: relative;
+  top: -20px;
+  padding: 40px 30px;
+  border: 1px solid #23A6F0;
+}
+.section2 .box div div p {
+  margin-top: 5px;
+}
+
 @media (max-width: 500px) {
+  * {
+    overflow-x: hidden;
+  }
   .white {
     color: black;
   }
@@ -127,5 +166,17 @@ header .content .section .box button {
   }
   header .content {
     display: none;
+  }
+  .section2 {
+    padding: 100px 10px;
+  }
+  .section2 .text h1 {
+    font-size: 45px;
+  }
+  .section2 .text p {
+    width: 80%;
+  }
+  .section2 .box {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
