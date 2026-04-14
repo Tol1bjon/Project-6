@@ -36,16 +36,13 @@ header .content .navbar div {
   align-items: center;
   gap: 100px;
 }
-header .content .navbar div div .icon {
-  display: none !important;
-}
-header .content .navbar div .none {
-  display: none !important;
-}
 header .content .navbar div nav {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+header .content .navbar .icon {
+  display: none !important;
 }
 header .content .navbar button {
   background-color: #23A6F0;
@@ -53,6 +50,9 @@ header .content .navbar button {
   padding: 9px 15px;
   border-radius: 5px;
   border: none;
+}
+header .content .none {
+  display: none !important;
 }
 header .content .section {
   padding-top: 50px;
@@ -171,6 +171,59 @@ header .content .section .box button {
   border: 1px solid #DEDEDE;
 }
 
+.section4 {
+  max-width: 1200px;
+  margin: auto;
+}
+.section4 .text {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+}
+.section4 .grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  gap: 30px;
+}
+.section4 .grid .item {
+  padding: 25px;
+  display: flex;
+  gap: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.section4 .grid-none {
+  display: grid;
+  grid-template: repeat(7, 1fr)/repeat(1, 1fr);
+  gap: 20px;
+  display: none !important;
+}
+.section4 .grid-none .item1 {
+  padding: 25px;
+  display: flex;
+  gap: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.section5 {
+  padding: 100px 0px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+.section5 aside {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+.section5 .img2 {
+  display: none !important;
+}
+
 @media (max-width: 500px) {
   * {
     overflow-x: hidden;
@@ -214,5 +267,38 @@ header .content .section .box button {
   }
   .section3 .box {
     flex-direction: column;
+  }
+  .section4 {
+    padding: 100px 10px;
+  }
+  .section4 .text {
+    width: 70%;
+  }
+  .section4 .grid {
+    display: none;
+    gap: 10px;
+  }
+  .section4 .grid-none {
+    display: block !important;
+  }
+  .section4 .grid-none .item1 {
+    margin-bottom: 10px;
+  }
+  .section5 {
+    padding: 100px 10px;
+    text-align: center;
+  }
+  .section5 .text {
+    width: 70%;
+  }
+  .section5 .img {
+    display: none;
+  }
+  .section5 .img2 {
+    display: block !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
