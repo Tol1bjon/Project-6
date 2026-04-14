@@ -147,6 +147,30 @@ header .content .section .box button {
   margin-top: 5px;
 }
 
+.section3 {
+  padding: 100px 0px;
+  max-width: 1200px;
+  margin: auto;
+}
+.section3 .text {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section3 .text p {
+  width: 35%;
+  margin: auto;
+}
+.section3 .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.section3 .box div {
+  padding: 30px;
+  border: 1px solid #DEDEDE;
+}
+
 @media (max-width: 500px) {
   * {
     overflow-x: hidden;
@@ -177,6 +201,18 @@ header .content .section .box button {
     width: 80%;
   }
   .section2 .box {
+    flex-direction: column;
+  }
+  .section3 {
+    padding: 100px 10px;
+  }
+  .section3 .text h1 {
+    font-size: 45px;
+  }
+  .section3 .text p {
+    width: 80%;
+  }
+  .section3 .box {
     flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
