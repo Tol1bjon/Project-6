@@ -237,6 +237,21 @@ header{
         }
     }
 }
+.section7{
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px;
+    .box{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 80px;
+    }
+    .end{
+        padding: 15px;
+        background-color: #FAFAFA;
+        text-align: center;
+    }
+}
 
 
 @media(max-width: 500px){
@@ -335,6 +350,13 @@ header{
             .text2{
                 display: none;
             }
+        }
+    }
+    .section7{
+        padding: 50px 70px;
+        .box{
+            flex-direction: column;
+            gap: 40px;
         }
     }
 }

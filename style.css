@@ -255,6 +255,22 @@ header .content .section .box button {
   border: none;
 }
 
+.section7 {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px;
+}
+.section7 .box {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
+.section7 .end {
+  padding: 15px;
+  background-color: #FAFAFA;
+  text-align: center;
+}
+
 @media (max-width: 500px) {
   * {
     overflow-x: hidden;
@@ -348,5 +364,12 @@ header .content .section .box button {
   }
   .section6 .content .text2 {
     display: none;
+  }
+  .section7 {
+    padding: 50px 70px;
+  }
+  .section7 .box {
+    flex-direction: column;
+    gap: 40px;
   }
 }/*# sourceMappingURL=style.css.map */
