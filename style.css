@@ -224,6 +224,37 @@ header .content .section .box button {
   display: none !important;
 }
 
+.section6 {
+  background-color: #252B42;
+  padding: 70px 0px;
+}
+.section6 .content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section6 .content .text {
+  display: none !important;
+}
+.section6 .content .input {
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.section6 .content .input input {
+  padding: 10px 20px;
+  border: none;
+}
+.section6 .content .input button {
+  background-color: #23A6F0;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 0;
+  border: none;
+}
+
 @media (max-width: 500px) {
   * {
     overflow-x: hidden;
@@ -300,5 +331,22 @@ header .content .section .box button {
     align-items: center;
     flex-direction: column;
     gap: 30px;
+  }
+  .section6 {
+    padding: 70px 10px;
+  }
+  .section6 .content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .section6 .content .text {
+    display: block !important;
+    text-align: center;
+  }
+  .section6 .content .text h1 {
+    color: white;
+  }
+  .section6 .content .text2 {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

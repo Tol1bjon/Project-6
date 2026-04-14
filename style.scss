@@ -211,6 +211,32 @@ header{
         display: none !important;
     }
 }
+.section6{
+    background-color: #252B42;
+    padding: 70px 0px;
+    .content{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .text{
+            display: none !important;
+        }
+        .input{
+            background-color: white;
+            display: flex;
+            align-items: center;
+            input{
+                padding: 10px 20px;
+                border: none;
+            }
+            button{
+                @include btn(0, 10px 20px)
+            }
+        }
+    }
+}
 
 
 @media(max-width: 500px){
@@ -292,6 +318,23 @@ header{
             align-items: center;
             flex-direction: column;
             gap: 30px;
+        }
+    }
+    .section6{
+        padding: 70px 10px;
+        .content{
+            flex-direction: column;
+            gap: 30px;
+            .text{
+                display: block !important;
+                text-align: center;
+                h1{
+                    color: white;
+                }
+            }
+            .text2{
+                display: none;
+            }
         }
     }
 }
